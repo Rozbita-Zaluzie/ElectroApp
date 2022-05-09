@@ -6,5 +6,6 @@ application for electro-technical calculations and guide
 ```\app\build\outputs\apk\debug```
 
 ### Functions list ###
-[x] Ohm rules calculator
-
+- [x] Ohm rules calculator
+- [ ] Rezistor color codes
+- [ ] RLC current/voltage angle
