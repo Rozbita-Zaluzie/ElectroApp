@@ -1,2 +1,10 @@
 # ElectroApp
-application build in Android Studio
+application for electro-technical calculations and guide
+**for android only**
+
+### Apk file in ###
+```\app\build\outputs\apk\debug```
+
+### Functions list ###
+[x] Ohm rules calculator
+
