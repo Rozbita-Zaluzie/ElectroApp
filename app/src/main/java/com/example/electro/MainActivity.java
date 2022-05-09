@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    // změna režimu počítání
     public void changeTo(View view) {
         TextView label1 = findViewById(R.id.label1);
         TextView label2 = findViewById(R.id.label2);
@@ -131,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         double num1 = Double.parseDouble(number1.getText().toString());
         double num2 = Double.parseDouble(number2.getText().toString());
 
-        double result = 0.101010;
+        double result = 0.01;
         try {
             result = ohmr.Calc(mode, num1, unit1.getSelectedItem().toString(), num2, unit2.getSelectedItem().toString());
         } catch (Exception e) {
@@ -143,11 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void removeHistory(View view) {
 
-
-
-    }
 
 
 

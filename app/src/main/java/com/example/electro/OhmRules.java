@@ -38,9 +38,26 @@ public class OhmRules {
         return unitBack;
     }
 
-    public double Calc (String type, double num1, String num1unit ,double num2, String num2unit) {
+    public boolean isBasicUnit(String unit) {
+       if (unit == "V" || unit == "A" || unit == "Ω") {
+        return true;
+       } else {
+           return false;
+       }
+    }
+
+
+    public double Calc (String mode, double num1, String num1unit ,double num2, String num2unit) {
+
+       double num1basic = 0.0;
+       double num2basic = 0.0;
+
+       // to basic units
+       if (!isBasicUnit(num1unit))
         return toBasicUnits(num1, type, num1unit);
     }
+
+
 
 
 
